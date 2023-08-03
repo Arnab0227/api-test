@@ -11,12 +11,12 @@ function SearchBar({onSubmit}) {
     const handleChange = (event) => {
       setTerm(event.target.value);
     }
-    const placeholder = "Search for relevent photos like books, sky etc... then hit enter";
+    
     return(
         <div className='search-bar'>
             <form onSubmit={handleSubmit} >
               <label htmlFor="">Search Photo Suggestions</label>
-                <input value={term} placeholder={placeholder} onChange={handleChange}/>
+                <input value={term} placeholder="Search for relevent photos like books, sky etc... then hit enter" onChange={handleChange}/>
 
             </form>
         </div>
