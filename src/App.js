@@ -12,6 +12,7 @@ function App() {
     }
     return(
         <div>
+            <div className='h-16 bg-gradient-to-tl from-indigo-500 via-purple-500 to-pink-500 rounded-b-md shadow-lg flex items-center justify-center text-white text-4xl'> Image Search</div>
             <SearchBar onSubmit={handleSubmit}/>
             <ImageList images={images} />
         </div>
